@@ -1,3 +1,7 @@
+<!-- = REQUIREMENTS = 
+footer.php — must close the HTML document and call wp_footer()
+-->
+
 <?php
 // Footer Section
 ?>
@@ -7,4 +11,5 @@
 </footer>
 <?php wp_footer(); ?>
 </body>
+
 </html>

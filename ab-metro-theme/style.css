@@ -5,6 +5,10 @@ Version: 1.0
 Description: A simple theme for The Metro Report.
 */
 
+/* = REQUIREMENTS =
+style.css — must include a valid theme metadata comment block (Theme Name, Author, Version, Description) and all your original CSS styling
+*/
+
 body {
   font-family: monospace, Arial, Helvetica, sans-serif;
   background-color: #f9f9f9;
