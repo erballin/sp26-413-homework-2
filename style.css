@@ -1,0 +1,22 @@
+/* 
+Theme Name: Metro Report Theme
+Author: Apollo Ballinger
+Version: 1.0
+Description: A simple theme for my blog.
+*/
+
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+a {
+  color: teal;
+}
