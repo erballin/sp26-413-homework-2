@@ -2,8 +2,6 @@
 header.php — must open the HTML document, call wp_head(), and display a site title or logo area
 -->
 
-<?php
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -23,11 +21,11 @@ header.php — must open the HTML document, call wp_head(), and display a site t
 
   <header>
     <h1>
-      <a href="<?php echo site_url(); ?>">
-        <?php echo home_url(); ?>
-        <?php echo bloginfo("name"); ?>
+      <a href="<?php echo home_url(); ?>">
+        <?php bloginfo('name'); ?>
       </a>
     </h1>
+
     <nav>
       <?php wp_nav_menu(array(
         'theme_location' => 'primary',
@@ -36,6 +34,4 @@ header.php — must open the HTML document, call wp_head(), and display a site t
       )); ?>
     </nav>
   </header>
-  <?php wp_footer(); ?>
-
-</html>
+  <main id="themeMain">

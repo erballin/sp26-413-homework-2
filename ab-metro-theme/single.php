@@ -7,19 +7,30 @@ single.php — must display full post content using a Loop, with post title as <
 Template Name: Single
 */
 ?>
+
+<?php get_header(); ?>
+
+
 <?php
 // LOOP
+while (have_posts()) : the_post();
 ?>
+  <div class="single">
+    <article <?php post_class(); ?>>
 
-<?php while (have_posts()) : the_post(); ?>
+      <h1><?php the_title(); ?></h1>
 
-  <article <?php post_class(); ?>>
+      <p class="date">
+        By <?php the_author(); ?> | <?php the_date(); ?>
+      </p>
 
-    <h2><?php the_title(); ?></h2>
+      <div class="content">
+        <?php the_content(); ?>
+      </div>
 
-    <div>
-      <?php the_content(); ?>
-    </div>
+    </article>
+  </div>
 
-  </article>
 <?php endwhile; ?>
+
+<?php get_footer(); ?>
