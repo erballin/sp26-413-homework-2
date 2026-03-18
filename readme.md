@@ -1,12 +1,21 @@
 ## Assignment 2: Custom WordPress Theme
 
 ### WordPress Theme Structure & Architecture
+WordPress Theme Structure & Architecture
 
-Brief description of understanding. Use any combination of markdown techniques. Should be more than 3 sentences.
+A WordPress theme is made up of different PHP files that control how the website looks and works. Each file has a specific job, like showing the header, footer, or posts. The main files I used include style.css, functions.php, header.php, footer.php, index.php, and single.php.
+
+The style.css file contains the theme information and all the styling for the site. The functions.php file is used to set up features like menus, images, and loading styles. The header.php and footer.php files handle the top and bottom parts of every page.
+
+All of these files work together to build the full website. WordPress automatically loads the correct template file depending on what page is being viewed, like a blog post or a regular page.
 
 ### The Loop & Template Tags
 
-Brief description of understanding. Explain have_posts(), the_post(), and at least 3 template tags you used. Should be more than 3 sentences.
+The Loop is how WordPress displays posts from the database. It checks if there are posts using have_posts(), and if there are, it loops through them one by one. Inside the loop, the_post() sets up the data for each post so it can be displayed.
+
+I used several template tags inside the Loop to show content. For example, the_title() displays the post title, and the_content() shows the full post content. I also used the_excerpt() to show a short preview of posts and the_date() to display when the post was published.
+
+Template tags make it easy to pull information from WordPress without writing complex code. They help keep the theme simple and organized while still showing dynamic content.
 
 ---
 
